@@ -1,0 +1,8 @@
+STATUS PAKET
+- Portal 3 mata kuliah: tersedia.
+- Grammar original HTML: tersedia, lokal.
+- Journalism original HTML: tersedia, lokal.
+- Tourism Quest Supabase Live Classroom: tersedia pada versi yang disertakan.
+- Supabase database roster mahasiswa: tidak diperlukan.
+- Supabase realtime Grammar + Journalism: belum diimplementasikan.
+- Multiplayer Snake & Ladder lintas perangkat untuk semua mata kuliah: belum diimplementasikan.

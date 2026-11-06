@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>English Learning Quest</title>
+<style>
+:root{--ink:#17243a;--muted:#66758b;--line:#e4e9f2;--paper:#f4f7fc;--blue:#315efb;--teal:#16866b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);font-family:Inter,system-ui,Segoe UI,sans-serif;color:var(--ink)}
+.wrap{max-width:1080px;margin:auto;padding:28px 18px 50px}
+.hero{background:linear-gradient(120deg,#12233f,#3154b9);color:white;padding:34px;border-radius:24px}
+.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:900;opacity:.8}
+h1{font-size:clamp(30px,5vw,48px);margin:10px 0}
+.hero p{line-height:1.6;max-width:720px;color:#e1e9ff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;min-height:260px;box-shadow:0 8px 25px #24395b08}
+.icon{font-size:36px}.card h2{font-size:21px;margin:12px 0 6px}.card p{color:var(--muted);line-height:1.5;font-size:14px;flex:1}
+.status{font-size:11px;font-weight:800;border-radius:20px;padding:6px 9px;background:#eef2ff;color:#3154b9;align-self:flex-start}
+.status.live{background:#e7f7ef;color:#14724f}
+a.btn{display:block;text-align:center;text-decoration:none;background:var(--blue);color:white;padding:12px;border-radius:11px;font-weight:800}
+.note{margin-top:20px;background:#fff;border:1px solid var(--line);padding:16px;border-radius:14px;color:var(--muted);font-size:13px;line-height:1.6}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.card{min-height:220px}.hero{padding:25px}}
+</style></head>
+<body><main class="wrap">
+<section class="hero"><div class="eyebrow">MULTI-COURSE ENGLISH LEARNING PLATFORM</div><h1>English Learning Quest</h1>
+<p>Satu pintu untuk aktivitas English Grammar, Journalism, dan English for Tourism. Pilih mata kuliah untuk membuka game dan bank soal yang sesuai.</p></section>
+<section class="grid">
+<article class="card"><div class="icon">📝</div><span class="status">Supabase Live Multiplayer</span><h2>English Grammar</h2><p>The Grammar Newsroom — Advanced Edition. Lima misi grammar dengan Classic Quiz multiplayer, Game PIN, timer, dan live leaderboard.</p><a class="btn" href="games/grammar.html">Open Grammar Quest →</a></article>
+<article class="card"><div class="icon">📰</div><span class="status">Supabase Live Multiplayer</span><h2>Journalism</h2><p>Baby Reporters — Advanced Newsroom Edition. Lima learning sets, teori, 150 tantangan, dan multiplayer Classic Quiz dengan Game PIN dan live leaderboard. Snake & Ladder lokal tetap tersedia.</p><a class="btn" href="games/journalism.html">Open Journalism Quest →</a></article>
+<article class="card"><div class="icon">✈️</div><span class="status live">Supabase live classroom</span><h2>English for Tourism</h2><p>Tourism Quest dengan kelas, sesi PIN, mode individu/kelompok, bank soal, dan leaderboard realtime.</p><a class="btn" href="games/tourism.html">Open Tourism Quest →</a></article>
+</section>
+<div class="note"><b>Catatan implementasi:</b> Paket ini menyatukan ketiga mata kuliah dalam satu portal dan mempertahankan file game asli. Integrasi Supabase realtime yang sudah tersedia pada paket saat ini berada di Tourism Quest. Grammar dan Journalism tetap berjalan dengan mekanisme lokal bawaan HTML; keduanya belum mengirim skor lintas perangkat ke Supabase. Untuk leaderboard realtime pada ketiga mata kuliah, diperlukan tahap integrasi backend tambahan pada dua game tersebut.</div>
+</main></body></html>
